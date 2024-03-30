@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #F9797B;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Começo Header */
+header {
+    /* height: 80%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-contador {
+    margin: 17% 0 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-contador h1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 7%;
+}
+
+.header-contador i {
+    font-size: 30px;
+}
+
+.header-contador button {
+    background-color: transparent;
+    border: none;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 60px 60px 0 0;
+    position: relative;
+    width: 100%;
+    padding: 0 6% 15%;
+    height: 100%;
+}
+
+.pergunta {
+    height: 30%;
+}
+
+.titulo-pergunta {
+    margin: 15% 0 0;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.buttons button {
+    height: 30%;
+    width: 33%;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.buttons button:nth-child(2) {
+    margin-left: 7%;
+    background-color: #F9797B;
+    border: none;
+    color: #fff;
+}
+
+.buttons button:nth-child(1) {
+    border: solid 1px #F9797B;
+    background-color: transparent;
+    color: #F9797B;
+    
+}
+
+.p02, .p03, .p04, .p05, .p06, .p07, 
+.p08, .p08, .p09, .p10, .p11, .p12 {
+    display: none;
+}
+
+.resposta {
+    margin: 15% 0 0;
+    display: none;
+    text-align: center;
+    height: 100%;
+}
+
+.resposta img {
+    margin-top: 10%;
+    width: 53%;
+}
+
+.resposta button {
+    margin-top: 80%;
+    display: block;
+    float: right;
+    border: none;
+    background-color: #F25B5D;
+    width: 54%;
+    height: 7%;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.resposta a button {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.btn-cancelar {
+    height: 64%;
+}
+
+.btn-cancelar {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    text-decoration: none;
+}
+
+/* .btn-cancelar a {
+    width: 100%;
+    height: 30%;
+    text-align: end;
+} */
+
+.btn-cancelar button {
+    border: solid 1px #F9797B;
+    background-color: transparent;
+    color: #F9797B;
+    width: 150%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 7px;
+    color: #F9797B;
+}

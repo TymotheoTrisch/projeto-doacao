@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Doe</title>
 </head>
@@ -43,7 +39,7 @@
                 <h1>Faça o teste para ver se você tem os requisitos mínimos para doar:</h1>
             </div>
 
-            <button type="button">Verificar</button>
+            <a href="./verifica.html"><button type="button" id="btn-verificar">Verificar</button></a>
         </section>
 
         <section class="exigencias">
@@ -54,7 +50,7 @@
             <ul>
                 <li>
                     <div class="icon">
-                        <img src="./img/documento.svg" alt="Documento">
+                        <i class='bx bxs-id-card' style='color:#03a9f4'></i>
                     </div>
                     <label for="documento">Documento com foto</label>
 
@@ -63,7 +59,8 @@
 
                 <li>
                     <div class="icon">
-                        <img src="./img/dormir.svg" alt="Descanso">
+                        <!-- <i class='bx bxs-bed' style='color:#ff9800'  ></i> -->
+                        <i class='bx bxs-hotel' style='color:#FFB300'></i>
                     </div>
                     <label for="descanso">Estar descansado (ter dormido pelo
                         menos 6 horas antes de doar)</label>
@@ -73,7 +70,7 @@
 
                 <li>
                     <div class="icon">
-                        <img src="./img/comer.svg" alt="Comer">
+                        <i class='bx bx-bowl-hot' style='color:#03a9f4'></i>
                     </div>
                     <label for="comer">Estar alimentado
                         (Evitar alimentos gordurosos 3 horas antes de doar)</label>
@@ -83,7 +80,7 @@
 
                 <li>
                     <div class="icon">
-                        <img src="./img/bebida_alcoolica.svg" alt="Bebida">
+                        <i class='bx bx-drink' style='color:#ffb300'></i>
                     </div>
                     <label for="bebida">Não ingerir bebida alcoólica nas
                         ultimas 12 horas</label>
@@ -99,42 +96,56 @@
             </div>
 
             <div class="container1">
-                <img class="img-local" src="./img/imagem-regina.svg" alt="Imagem do hospital Regina">
+                <img class="img-local" src="./img/hospital_Regina.png" alt="Imagem do hospital Regina">
                 <div class="info-unidade">
-                    <h1>HEMOVIDA - Hospital Regina</h1>
-                    <p>(51) 25815241</p>
+                    <a href="https://hospitalregina.com.br/informacoes-uteis/doacao-de-sangue" target="_blank">
+                        <h1>HEMOVIDA - Hospital Regina</h1>
+                    </a>
+                    <p class="tell">(51) 3581-5241</p>
                     <div class="localizacao">
-                        <img src="./img/localizacao.svg" alt="Localização">
-                        <p>Localização</p>
+                        <a href="https://maps.app.goo.gl/a1yuGDywTdNPbM2G7" target="_blank">
+                            <i class='bx bx-map' style='color:#2a73c4'></i>
+                            <p>Localização</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="container1">
-                <img class="img-local" src="./img/hospital_getulio_vargas.svg" alt="Imagem do hospital Regina">
+                <img class="img-local" src="./img/Hospital-Getulio-Vargas.png" alt="Imagem do hospital Regina">
                 <div class="info-unidade">
-                    <h1>Unidade coleta de sangue hospital Getulio Vargas</h1>
-                    <p>(51) 25815241</p>
+                    <a href="https://www.fhgv.com.br/home/2022/06/unidade-de-coleta-de-sangue-no-getulio-vargas-completa-seis-meses-no-dia-mundial-do-doador-de-sangue/" target="_blank">
+                        <h1>Unidade coleta de sangue hospital Getulio Vargas</h1>
+                    </a>
+                    <p class="tell">(51) 3451-8200</p>
                     <div class="localizacao">
-                        <img src="./img/localizacao.svg" alt="Localização">
-                        <p>Localização</p>
+                        <a href="https://maps.app.goo.gl/wtwQBxuPa2PMxmrj6" target="_blank">
+                            <i class='bx bx-map' style='color:#2a73c4'></i>
+                            <p>Localização</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="container1">
-                <img class="img-local" src="./img/hemocentro_porto_alegre.svg" alt="Imagem do hospital Regina">
+                <img class="img-local" src="./img/Hemocentro-poa.jpg" alt="Imagem do hospital Regina">
                 <div class="info-unidade">
-                    <h1>HEMOCENTRO - Porto Alegre</h1>
-                    <p>(51) 25815241</p>
+                    <a href="https://www.rs.gov.br/carta-de-servicos/servicos?servico=601" target="_blank">
+                        <h1>HEMOCENTRO - Porto Alegre</h1>
+                    </a>
+                    <p class="tell">(51) 3336-6755</p>
                     <div class="localizacao">
-                        <img src="./img/localizacao.svg" alt="Localização">
-                        <p>Localização</p>
+                        <a href="https://maps.app.goo.gl/vEKDJDPEG3E4Sqey7" target="_blank">
+                            <i class='bx bx-map' style='color:#2a73c4'></i>
+                            <p>Localização</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

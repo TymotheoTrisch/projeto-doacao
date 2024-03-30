@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +15,14 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* height: 100vh;
-    width: 100vw; */
+    /* height: 100%; */
+    width: 100vw;
 }
 
+
+/* Começo Header */
 header {
-    height: 80%;
+    /* height: 80%; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -44,6 +49,10 @@ header {
     color: #fff;
 }
 
+/* Fim Header */
+
+
+/* Inicio Main */
 .container {
     background-color: #fff;
     border-radius: 60px 60px 0 0;
@@ -57,8 +66,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    left: 5%;
+    width: 95%;
+    left: 2.5%;
     top: -3%;
     position: absolute;
     background-color: #fff;
@@ -74,16 +83,21 @@ header {
     align-items: center;
 }
 
-.info p {
-    margin-top: 5%;
-    font-size: 11px;
-    font-weight: 500;
+.info img {
+    margin-bottom: 10px;
 }
 
+.info p {
+    font-size: 73%;
+    font-weight: 500;
+    text-align: end;
+}
+
+/* Inicio Teste de verificaçãp */
+
 .teste {
-    margin: 24% 0 15%;
+    margin: 24% 0 17%;
     /* background-color: #F9797B; */
-    height: 50%;
     width: 100%;
 }
 
@@ -92,10 +106,14 @@ header {
     margin-bottom: 12%;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     display: block;
-    height: 100%;
-    width: 45%;
+    height: 30%;
+    width: 40%;
     padding: 3.5% 0;
     margin: 0 auto;
     border: none;
@@ -105,9 +123,13 @@ button {
     font-size: 18px;
 }
 
+/* Fim Teste */
+
+/* Inicio exigências */
+
 .exigencias {
     /* background-color: #F9797B; */
-    height: 100%;
+    margin-bottom: 15%;
 }
 
 .titulo-exigencias h1 {
@@ -134,7 +156,6 @@ ul li {
 .icon {
     width: 53px;
     height: 51px;
-    border: 1px solid #03A9F4;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -142,57 +163,120 @@ ul li {
     margin-left: 2%;
 }
 
+ul li:nth-child(1) .icon {
+    border: 1px solid #03A9F4;
+}
+ul li:nth-child(2) .icon {
+    border: 1px solid #FFB300;
+}
+ul li:nth-child(3) .icon {
+    border: 1px solid #03a9f4;
+}
+ul li:nth-child(4) .icon {
+    border: 1px solid #FFB300;
+}
+
+.icon i {
+    font-size: 35px;
+}
+
 label {
     width: 70%;
     margin-left: 3%;
+    font-size: 110%;
     /* background-color: #F25B5D; */
 }
 
+li input {
+    margin: 0 5%;
+    appearance: none;
+    width: 27px;
+    height: 25px;
+    /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
+    border: solid 2px #F25B5D;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    content: url('../img/checked.svg');
+    border: solid 2px #157DD1;
+    background-color: #64B5F6;
+    
+}   
+
+input[type="checkbox"]:checked ~ label {
+    text-decoration: underline;
+}
+
+
+/* Fim exigências */
+
+
+/* Inicio unidade de coleta */
+
 .unidade-coleta {
-    background-color: #F9797B;
+    /* background-color: aqua; */
 }
 
 .titulo-coleta h1 {
     font-size: 20px;
     margin-bottom: 6%;
-    margin-top: 15%;
+    /* margin-top: 15%; */
 }
 
 .container1 {
     background-color: #FBFBFB;
     margin-top: 6%;
+    padding: 2.5%;
     border-radius: 10px;
     display: flex;
-    height: 120px;
+    height: auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-unidade {
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
-    margin-top: 2%;
+    margin-left: 2%;
 }
 
 .info-unidade h1 {
     font-size: 18px;
     margin-bottom: 6%;
+    color: #000;
 }
 
 .img-local {
-    width: 34%;
-    height: 84%;
-    margin: 2%;
-}
-
-.img-local:nth-child(1) {
-    margin: 2% 0;
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .info-unidade .localizacao {
-    background-color: #F25B5D;
     display: flex;
+    margin-top: 3%;
+    font-size: 15px;
 }
 
-.localizacao img {
-    margin: 0 5% 0 0%;
+
+.localizacao a {
+    display: flex;
+    text-decoration: none;
+    color: #B5B5B5;
 }
+
+.localizacao a i {
+    /* margin: 0 5% 0 0%; */
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+.info-unidade .tell {
+    font-size: 15px;
+    color: #2A73C4;
+}
+
+/* Fim unidade de coleta */
+
+/* Fim Main */
