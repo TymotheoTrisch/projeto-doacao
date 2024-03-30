@@ -133,7 +133,7 @@ header {
 }
 
 .btn-cancelar {
-    height: 64%;
+    height: 55%;
 }
 
 .btn-cancelar {
@@ -151,7 +151,6 @@ header {
 } */
 
 .btn-cancelar button {
-    margin-bottom: 10%;
     border: solid 1px #F9797B;
     background-color: transparent;
     color: #F9797B;
