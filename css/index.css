@@ -44,7 +44,7 @@ header {
 }
 
 .img-header-logo h1 {
-    font-size: 32px;
+    font-size: 240%;
     font-weight: 500;
     color: #fff;
 }
@@ -88,7 +88,7 @@ header {
 }
 
 .info p {
-    font-size: 73%;
+    font-size: 80%;
     font-weight: 500;
     text-align: end;
 }
@@ -102,7 +102,7 @@ header {
 }
 
 .titulo-teste h1 {
-    font-size: 20px;
+    font-size: 165%;
     margin-bottom: 12%;
 }
 
@@ -120,7 +120,7 @@ button {
     background-color: #F25B5D;
     color: #fff;
     border-radius: 7px;
-    font-size: 18px;
+    font-size: 130%;
 }
 
 /* Fim Teste */
@@ -133,7 +133,7 @@ button {
 }
 
 .titulo-exigencias h1 {
-    font-size: 20px;
+    font-size: 165%;
     margin-bottom: 5%;
 }
 
@@ -142,20 +142,20 @@ ul {
 }
 
 ul li {
+    padding: 1% 0;
     display: flex;
     align-items: center;
-    height: 63px;
+    height: 100%;
     background-color: #FBFBFB;
     color: #B5B5B5;
     border-radius: 10px;
     margin: 3% 0;
-    font-size: 13px;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
-    width: 53px;
-    height: 51px;
+    width: 16%;
+    height: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -164,20 +164,20 @@ ul li {
 }
 
 ul li:nth-child(1) .icon {
-    border: 1px solid #03A9F4;
+    border: 2px solid #03A9F4;
 }
 ul li:nth-child(2) .icon {
-    border: 1px solid #FFB300;
+    border: 2px solid #FFB300;
 }
 ul li:nth-child(3) .icon {
-    border: 1px solid #03a9f4;
+    border: 2px solid #03a9f4;
 }
 ul li:nth-child(4) .icon {
-    border: 1px solid #FFB300;
+    border: 2px solid #FFB300;
 }
 
 .icon i {
-    font-size: 35px;
+    font-size: 300%;
 }
 
 label {
@@ -220,7 +220,7 @@ input[type="checkbox"]:checked ~ label {
 }
 
 .titulo-coleta h1 {
-    font-size: 20px;
+    font-size: 165%;
     margin-bottom: 6%;
     /* margin-top: 15%; */
 }
@@ -242,7 +242,7 @@ input[type="checkbox"]:checked ~ label {
 }
 
 .info-unidade h1 {
-    font-size: 18px;
+    font-size: 150%;
     margin-bottom: 6%;
     color: #000;
 }
@@ -256,7 +256,7 @@ input[type="checkbox"]:checked ~ label {
 .info-unidade .localizacao {
     display: flex;
     margin-top: 3%;
-    font-size: 15px;
+    font-size: 110%;
 }
 
 
@@ -273,10 +273,16 @@ input[type="checkbox"]:checked ~ label {
 }
 
 .info-unidade .tell {
-    font-size: 15px;
-    color: #2A73C4;
+    font-size: 110%;
+    color: #2a73c4;
 }
 
 /* Fim unidade de coleta */
 
 /* Fim Main */
+
+@media (max-width: 435px) {
+    .info p {
+        font-size: 68%;
+    }
+}
