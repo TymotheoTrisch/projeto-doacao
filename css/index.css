@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     /* height: 100%; */
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -145,7 +145,6 @@ ul li {
     padding: 1% 0;
     display: flex;
     align-items: center;
-    height: 100%;
     background-color: #FBFBFB;
     color: #B5B5B5;
     border-radius: 10px;
@@ -163,19 +162,11 @@ ul li {
     margin-left: 2%;
 }
 
-ul li:nth-child(1) .icon {
+ul li .icon {
     border: 2px solid #03A9F4;
 }
 
-ul li:nth-child(2) .icon {
-    border: 2px solid #FFB300;
-}
-
-ul li:nth-child(3) .icon {
-    border: 2px solid #03a9f4;
-}
-
-ul li:nth-child(4) .icon {
+ul li:nth-child(even) .icon {
     border: 2px solid #FFB300;
 }
 
@@ -284,6 +275,12 @@ input[type="checkbox"]:checked~label {
 
 /* Fim Main */
 
+/* Classe para tirar algumas tags da tela */
+
+.none-mobile {
+    display: none;
+}
+
 @media (max-width: 435px) {
     .info p {
         text-align: center;
@@ -291,7 +288,7 @@ input[type="checkbox"]:checked~label {
     }
 }
 
-@media (max-width: 335px) {
+@media (max-width: 355px) {
     
     .img-local {
         display: none;

@@ -103,50 +103,48 @@ header {
 }
 
 .resposta {
-    margin: 15% 0 0;
+    margin: 15% 0 15%;
     display: none;
     text-align: center;
-    height: 100%;
+    height: 60%;
 }
 
 .resposta img {
     margin-top: 10%;
-    width: 53%;
+    width: auto;
 }
 
-.resposta button {
-    margin-top: 80%;
-    display: block;
-    float: right;
-    border: none;
-    background-color: #F25B5D;
-    width: 54%;
+.voltar {
+    width: 100%;
     height: 7%;
+    margin-bottom: 5%;
+}
+
+.voltar a {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.voltar a button {
+    color: #fff;
+    background-color: #F25B5D;
+    border: none;
+    padding: 20px;
     font-size: 16px;
     border-radius: 7px;
 }
 
-.resposta a button {
-    text-decoration: none;
-    color: #fff;
-    
-}
-
 .btn-cancelar {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 100%;
-    height: 60%;
+    height: 40%;
     display: flex;
     align-items: end;
     justify-content: start;
     text-decoration: none;
 }
-
-/* .btn-cancelar a {
-    width: 100%;
-    height: 30%;
-    text-align: end;
-} */
 
 .btn-cancelar button {
     border: solid 1px #F9797B;
@@ -156,4 +154,12 @@ header {
     padding: 8% 0;
     border-radius: 7px;
     font-size: 130%;
+}
+
+.none-mobile {
+    display: none;
+}
+
+.voltar {
+    display: none;
 }

@@ -1,0 +1,117 @@
+.none-desktop {
+    display: none;
+}
+
+.none-mobile {
+    display: flex;
+}
+
+header {
+    height: 14%;
+}
+
+.header-contador h1 {
+    font-size: 150%;
+}
+
+.header-contador i {
+    font-size: 260%;
+    transition: .5s;
+}
+
+.btn-esq i:hover {
+    translate: -10px;
+}
+
+.btn-dir i:hover {
+    translate: 10px;
+}
+
+.container {
+    text-align: center;
+    border-radius: 0;
+    height: 86%;
+}
+
+.titulo-pergunta {
+    margin: 5% 15%;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.buttons button {
+    height: 38%;
+    width: 10%;
+    border-radius: 7px;
+    font-size: 130%;
+}
+
+.buttons button:nth-child(2) {
+    margin-left: 7%;
+    background-color: #F9797B;
+    border: none;
+    color: #fff;
+}
+
+.buttons button:nth-child(1) {
+    border: solid 1px #F9797B;
+    background-color: transparent;
+    color: #F9797B;
+    
+}
+
+.buttons button:nth-child(1):hover  {
+    translate: 0px -10px;
+    /* border: none;
+    background-color: #F25B5D;
+    color: #fff; */
+}
+
+.buttons button:nth-child(2):hover  {
+    translate: 0px -10px;
+    /* border: solid 1px #F25B5D;
+    background-color: transparent;
+    color: #F25B5D; */
+}
+
+.resposta {
+    margin: 5% 0 0;
+}
+
+.resposta img {
+    margin-top: 7%;
+    width: 23%;
+}
+
+.voltar {
+    height: 0%;
+}
+
+.voltar a {
+    margin-top: 15%;
+}
+
+
+
+.btn-cancelar button, button {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn-cancelar button:hover {
+    background-color: #F9797B;
+    color: #fff;
+    
+}
+
+@media (min-width: 1700px) {
+    .voltar a {
+        margin-top: 10%;
+    }
+}

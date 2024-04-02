@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index-tablet.css" media="only screen and (min-width:720px)" />
+    <link rel="stylesheet" href="./css/index-desktop.css" media="only screen and (min-width:1024px)" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Doe</title>
@@ -16,6 +18,14 @@
             <img src="./img/logo.svg" alt="Logo Doe">
             <h1>Doe</h1>
         </div>
+
+        <section class="teste-desktop none-mobile">
+            <div class="titulo-teste-desktop">
+                <h1>Faça o teste para ver se você tem os requisitos mínimos para doar:</h1>
+            </div>
+
+            <a href="./verifica.html"><button type="button" id="btn-verificar">Verificar</button></a>
+        </section>
     </header>
 
     <main class="container">
@@ -34,7 +44,7 @@
             </div>
         </section>
 
-        <section class="teste">
+        <section class="teste none-desktop">
             <div class="titulo-teste">
                 <h1>Faça o teste para ver se você tem os requisitos mínimos para doar:</h1>
             </div>
@@ -42,103 +52,250 @@
             <a href="./verifica.html"><button type="button" id="btn-verificar">Verificar</button></a>
         </section>
 
-        <section class="exigencias">
-            <div class="titulo-exigencias">
-                <h1>Exigências para doar:</h1>
-            </div>
+        <div class="exigencias-requisitos">
+            <section class="exigencias">
+                <div class="titulo-exigencias">
+                    <h1>Exigências para doar:</h1>
+                </div>
 
-            <ul>
-                <li>
-                    <div class="icon">
-                        <i class='bx bxs-id-card' style='color:#03a9f4'></i>
-                    </div>
-                    <label for="documento">Documento com foto</label>
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class='bx bxs-id-card' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="documento">Documento com foto</label>
 
-                    <input type="checkbox" id="documento">
-                </li>
+                        <input type="checkbox" id="documento">
+                    </li>
 
-                <li>
-                    <div class="icon">
-                        <!-- <i class='bx bxs-bed' style='color:#ff9800'  ></i> -->
-                        <i class='bx bxs-hotel' style='color:#FFB300'></i>
-                    </div>
-                    <label for="descanso">Estar descansado (ter dormido pelo
-                        menos 6 horas antes de doar)</label>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bxs-bed' style='color:#ff9800'  ></i> -->
+                            <i class='bx bxs-hotel' style='color:#FFB300'></i>
+                        </div>
+                        <label for="descanso">Estar descansado (ter dormido pelo
+                            menos 6 horas antes de doar)</label>
 
-                    <input type="checkbox" id="descanso">
-                </li>
+                        <input type="checkbox" id="descanso">
+                    </li>
 
-                <li>
-                    <div class="icon">
-                        <i class='bx bx-bowl-hot' style='color:#03a9f4'></i>
-                    </div>
-                    <label for="comer">Estar alimentado
-                        (Evitar alimentos gordurosos 3 horas antes de doar)</label>
+                    <li>
+                        <div class="icon">
+                            <i class='bx bx-bowl-hot' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="comer">Estar alimentado
+                            (Evitar alimentos gordurosos 3 horas antes de doar)</label>
 
-                    <input type="checkbox" id="comer">
-                </li>
+                        <input type="checkbox" id="comer">
+                    </li>
 
-                <li>
-                    <div class="icon">
-                        <i class='bx bx-drink' style='color:#ffb300'></i>
-                    </div>
-                    <label for="bebida">Não ingerir bebida alcoólica nas
-                        ultimas 12 horas</label>
+                    <li>
+                        <div class="icon">
+                            <i class='bx bx-drink' style='color:#ffb300'></i>
+                        </div>
+                        <label for="bebida">Não ingerir bebida alcoólica nas
+                            ultimas 12 horas</label>
 
-                    <input type="checkbox" id="bebida">
-                </li>
-            </ul>
-        </section>
+                        <input type="checkbox" id="bebida">
+                    </li>
+                    <li class="none-mobile">
+                        <div class="icon">
+                            <!-- <i class='bx bx-clinic' style='color:#03a9f4' ></i> -->
+                            <i class='bx bx-plus-medical' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="saude">Estar em boas condições de saúde</label>
+
+                        <input type="checkbox" id="saude">
+                    </li>
+                    <li class="none-mobile">
+                        <div class="icon">
+                            <!-- <i class='bx bx-body' style='color:#ffb300'  ></i> -->
+                            <i class='bx bx-male' style='color:#ffb300'></i>
+                        </div>
+                        <label for="peso">Pesar no mínimo 50 quilos</label>
+
+                        <input type="checkbox" id="peso">
+                    </li>
+                    <li class="none-mobile">
+                        <div class="icon">
+                            <!-- <i class='bx bxs-face' style='color:#03a9f4' ></i> -->
+                            <i class='bx bx-face' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="idade">Ter entre 18 e 69 anos
+                            (a partir de 16 anos se acompanhado de responsável
+                            legal a cada doação)</label>
+
+                        <input type="checkbox" id="idade">
+                    </li>
+                </ul>
+            </section>
+
+            <section class="requisitos none-mobile">
+                <div class="titulo-requisitos">
+                    <h1>Requisitos para doar:</h1>
+                </div>
+
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class='bx bx-injection' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="vacinacao">Vacinação recente</label>
+
+                        <input type="checkbox" id="vacinacao">
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bxs-quote-single-left' style='color:#ffb300'  ></i> -->
+                            <i class='bx bxs-hotel' style='color:#FFB300'></i>
+                        </div>
+                        <label for="piercing">Piercing na língua ou genital </label>
+
+                        <input type="checkbox" id="piercing">
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bx-paint' style='color:#03a9f4'  ></i> -->
+                            <i class='bx bx-sticker' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="tatuagem">Tatuagem, maquiagem definitiva feitas nos ultimos 12 meses</label>
+
+                        <input type="checkbox" id="tatuagem">
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <i class='bx bxs-virus' style='color:#ffb300'></i>
+                        </div>
+                        <label for="gripe">Sintomas de gripe nos últimos 15 dias</label>
+
+                        <input type="checkbox" id="gripe">
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bx-clinic' style='color:#03a9f4' ></i> -->
+                            <i class='bx bx-plus-medical' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="gravida">Estar grávida ou amamentando</label>
+
+                        <input type="checkbox" id="gravida">
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bx-body' style='color:#ffb300'  ></i> -->
+                            <i class='bx bx-clinic' style='color:#ffb300'></i>
+                        </div>
+                        <label for="cirurgias">Cirurgias Específicas (isso será avaliado na entrevista)</label>
+
+                        <input type="checkbox" id="cirurgias">
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bxs-face' style='color:#03a9f4' ></i> -->
+                            <i class='bx bxs-virus' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="dst">DST ou situações nas quais há maior risco de adquirir DST, aguardar 12
+                            meses</label>
+
+                        <input type="checkbox" id="dst">
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bxs-face' style='color:#ffb300' ></i> -->
+                            <i class='bx bxs-capsule' style='color:#ffb300'></i>
+                        </div>
+                        <label for="medicamento">Faz uso de algum medicamento (isso será avaliado na entrevista)</label>
+
+                        <input type="checkbox" id="medicamento">
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <!-- <i class='bx bxs-face' style='color:#03a9f4' ></i> -->
+                            <i class='bx bxs-virus' style='color:#03a9f4'></i>
+                        </div>
+                        <label for="hepatite">Ter tido hepatite após os 11 anos de idade</label>
+
+                        <input type="checkbox" id="hepatite">
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <section class="unidade-coleta">
             <div class="titulo-coleta">
                 <h1>Unidades de coleta:</h1>
             </div>
 
-            <div class="container1">
-                <img class="img-local" src="./img/hospital_Regina.png" alt="Imagem do hospital Regina">
-                <div class="info-unidade">
-                    <a href="https://hospitalregina.com.br/informacoes-uteis/doacao-de-sangue" target="_blank">
-                        <h1>HEMOVIDA - Hospital Regina</h1>
-                    </a>
-                    <p class="tell">(51) 3581-5241</p>
-                    <div class="localizacao">
-                        <a href="https://maps.app.goo.gl/a1yuGDywTdNPbM2G7" target="_blank">
-                            <i class='bx bx-map' style='color:#2a73c4'></i>
-                            <p>Localização</p>
+            <div class="conteudo-coleta">
+                <div class="container1">
+                    <div class="iframe-local none-mobile">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.4280739270916!2d-51.117711823694364!3d-29.678366414398756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951943c7e0f4af83%3A0x8a2f8a9514c734b7!2sHemovida%20Sociedade%20Simples!5e0!3m2!1spt-BR!2sbr!4v1711853464224!5m2!1spt-BR!2sbr"
+                            width="369" height="145" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <img class="img-local none-desktop" src="./img/hospital_Regina.png" alt="Imagem do hospital Regina">
+                    <div class="info-unidade">
+                        <a href="https://hospitalregina.com.br/informacoes-uteis/doacao-de-sangue" target="_blank">
+                            <h1>HEMOVIDA - Hospital Regina</h1>
                         </a>
+                        <p class="tell">(51) 3581-5241</p>
+                        <div class="localizacao">
+                            <a href="https://maps.app.goo.gl/a1yuGDywTdNPbM2G7" target="_blank">
+                                <i class='bx bx-map' style='color:#2a73c4'></i>
+                                <p>Localização</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container1">
-                <img class="img-local" src="./img/Hospital-Getulio-Vargas.png" alt="Imagem do hospital Regina">
-                <div class="info-unidade">
-                    <a href="https://www.fhgv.com.br/home/2022/06/unidade-de-coleta-de-sangue-no-getulio-vargas-completa-seis-meses-no-dia-mundial-do-doador-de-sangue/" target="_blank">
-                        <h1>Unidade coleta hospital Getulio Vargas</h1>
-                    </a>
-                    <p class="tell">(51) 3451-8200</p>
-                    <div class="localizacao">
-                        <a href="https://maps.app.goo.gl/wtwQBxuPa2PMxmrj6" target="_blank">
-                            <i class='bx bx-map' style='color:#2a73c4'></i>
-                            <p>Localização</p>
+                <div class="container1">
+                    <div class="iframe-local none-mobile">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.411139090766!2d-51.1685738236892!3d-29.823552221069676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196f4cc3f26473%3A0xade431d7e1699a0c!2sHospital%20Get%C3%BAlio%20Vargas!5e0!3m2!1spt-BR!2sbr!4v1711853697352!5m2!1spt-BR!2sbr"
+                            width="369" height="145" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <img class="img-local none-desktop" src="./img/Hospital-Getulio-Vargas.png"
+                        alt="Imagem do hospital Regina">
+                    <div class="info-unidade">
+                        <a href="https://www.fhgv.com.br/home/2022/06/unidade-de-coleta-de-sangue-no-getulio-vargas-completa-seis-meses-no-dia-mundial-do-doador-de-sangue/"
+                            target="_blank">
+                            <h1>Unidade coleta hospital Getulio Vargas</h1>
                         </a>
+                        <p class="tell">(51) 3451-8200</p>
+                        <div class="localizacao">
+                            <a href="https://maps.app.goo.gl/wtwQBxuPa2PMxmrj6" target="_blank">
+                                <i class='bx bx-map' style='color:#2a73c4'></i>
+                                <p>Localização</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container1">
-                <img class="img-local" src="./img/Hemocentro-poa.jpg" alt="Imagem do hospital Regina">
-                <div class="info-unidade">
-                    <a href="https://www.rs.gov.br/carta-de-servicos/servicos?servico=601" target="_blank">
-                        <h1>HEMOCENTRO - Porto Alegre</h1>
-                    </a>
-                    <p class="tell">(51) 3336-6755</p>
-                    <div class="localizacao">
-                        <a href="https://maps.app.goo.gl/vEKDJDPEG3E4Sqey7" target="_blank">
-                            <i class='bx bx-map' style='color:#2a73c4'></i>
-                            <p>Localização</p>
+                <div class="container1">
+                    <div class="iframe-local none-mobile">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.085244308914!2d-51.18125122368068!3d-30.063090932142792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199d5556968425%3A0xe0230311ffe2d80a!2sHemocentro%20do%20Estado%20do%20Rio%20Grande%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1711853633316!5m2!1spt-BR!2sbr"
+                            width="369" height="145" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <img class="img-local none-desktop" src="./img/Hemocentro-poa.jpg" alt="Imagem do hospital Regina">
+                    <div class="info-unidade">
+                        <a href="https://www.rs.gov.br/carta-de-servicos/servicos?servico=601" target="_blank">
+                            <h1>HEMOCENTRO - Porto Alegre</h1>
                         </a>
+                        <p class="tell">(51) 3336-6755</p>
+                        <div class="localizacao">
+                            <a href="https://maps.app.goo.gl/vEKDJDPEG3E4Sqey7" target="_blank">
+                                <i class='bx bx-map' style='color:#2a73c4'></i>
+                                <p>Localização</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,6 +303,7 @@
     </main>
 
     <script src="./index.js"></script>
+    <!-- <i class='bx bx-copyright' ></i> -->
 </body>
 
 </html>

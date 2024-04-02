@@ -1,0 +1,196 @@
+.none-mobile {
+    display: flex
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Começo Header */
+header {
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-header-logo {
+    display: flex;
+    margin: 0;
+    padding: 2% 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    width: auto;
+    align-items: center;
+}
+
+.img-header-logo img {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Inicio Teste de verificaçãp */
+
+.teste-desktop {
+    display: none;
+}
+
+.teste {
+    flex-direction: column;
+    margin: 15% 0 17%;
+}
+
+
+button {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+/* Fim Teste */
+
+/* Fim Header */
+
+
+/* Inicio Main */
+.container {
+    border-radius: 0;
+    position: static;
+}
+
+.info {
+    width: 95%;
+    margin: 5% auto;
+    left: 0;
+    top: 0;
+    position: static;
+}
+
+.info div {
+    padding: 2% 0;
+}
+
+.info p {
+    font-size: 100%;
+    font-weight: 500;
+    text-align: end;
+}
+
+/* Exigências e Requisitos */
+.exigencias-requisitos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inicio exigências */
+
+.requisitos, .exigencias {
+    flex-direction: column;
+    margin-bottom: 15%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.titulo-requisitos h1 {
+    font-size: 165%;
+    margin-bottom: 2%;
+}
+
+.titulo-exigencias h1 {
+    font-size: 165%;
+    margin-bottom: 5%;
+}
+
+.requisitos label {
+    width: 70%;
+    margin-left: 3%;
+    font-size: 110%;
+}
+
+
+/* Fim exigências */
+
+
+/* Inicio unidade de coleta */
+
+.unidade-coleta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: #2a73c4; */
+}
+
+.conteudo-coleta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo-coleta h1 {
+    font-size: 165%;
+    margin-bottom: 3%;
+    width: 80vw;
+    padding: 0 6% 0 0;
+}
+
+.iframe-local iframe {
+    display: none;
+}
+
+.container1 {
+    width: 100%;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+}
+
+.info-unidade {
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+.info-unidade h1 {
+    font-size: 150%;
+    font-weight: 400;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    color: #000;
+}
+
+.img-local {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-unidade .localizacao {
+    display: flex;
+    margin-top: 2%;
+    font-size: 120%;
+}
+
+
+.localizacao a {
+    display: flex;
+    text-decoration: none;
+    color: #B5B5B5;
+}
+
+.localizacao a i {
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+.info-unidade .tell {
+    font-size: 120%;
+    color: #2a73c4;
+    margin-top: 2%;
+}

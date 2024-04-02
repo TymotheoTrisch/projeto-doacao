@@ -75,10 +75,10 @@ const perguntasT = [
     }
 ]
 
-
-const pergunta = document.querySelector('.pergunta'); // Seleciona todas as perguntas
-const contador = document.querySelector('.header-contador h1'); // Elemento que exibe o número da pergunta atual
-var indicePerguntaAtual = 0; // Índice da pergunta atual
+const orientationPagina = getOrientation()
+const pergunta = document.querySelector('.pergunta');
+var indicePerguntaAtual = 0;
+const contador = document.querySelector('.header-contador h1');
 const resultado_A = document.querySelector('.apto')
 const resultado_NA = document.querySelector('.nao-apto')
 
@@ -87,27 +87,22 @@ const btn_nao = document.getElementById("btn-nao")
 const btn_sim = document.getElementById('btn-sim')
 const btn_cancelar = document.querySelector('.btn-cancelar')
 
-// Função para exibir a pergunta atual
+
 function exibirPergunta(indice) {
 
-    
+
     pergunta1.innerHTML = perguntasT[indice].pergunta
     btn_nao.value = perguntasT[indice].btn_nao
     btn_sim.value = perguntasT[indice].btn_sim
     console.log(btn_nao.value, btn_sim.value);
-    
 
-    contador.innerHTML = (indice + 1) + '/' + perguntasT.length; // Atualiza o contador
-
-    indicePerguntaAtual = indice; // Atualiza o índice da pergunta atual
+    contador.innerHTML = (indice + 1) + '/' + perguntasT.length;
+    indicePerguntaAtual = indice;
 }
 
-// Exibe a primeira pergunta ao carregar a página
-exibirPergunta(0);
 
-// Seleciona os botões de navegação
-var botaoEsquerda = document.querySelector('.header-contador button:first-of-type');
-var botaoDireita = document.querySelector('.header-contador button:last-of-type');
+var botaoEsquerda = document.querySelector('.header-contador .btn-esq');
+var botaoDireita = document.querySelector('.header-contador .btn-dir');
 
 
 botaoEsquerda.addEventListener('click', function () {
@@ -117,7 +112,6 @@ botaoEsquerda.addEventListener('click', function () {
 });
 
 botaoDireita.addEventListener('click', function () {
-
     if (Object.keys(respostas).length > indicePerguntaAtual) {
         exibirPergunta(indicePerguntaAtual + 1);
     }
@@ -132,19 +126,22 @@ botoesResposta.forEach(function (botao) {
         var resposta = botao.value;
         console.log(resposta, pergunta);
         respostas[pergunta] = resposta;
-        avancarPergunta(pergunta);
+        avancarPergunta();
     });
 });
 
-function avancarPergunta(perguntaAtual) {
+function avancarPergunta() {
 
     var indiceProximaPergunta = indicePerguntaAtual + 1;
     console.log(respostas);
-    
+
     if (Object.keys(respostas).length === perguntasT.length) {
         pergunta.style.display = 'none'
         btn_cancelar.style.display = 'none'
-        if(Object.values(respostas).includes("false")) {
+        contador.innerHTML = "......"
+        botaoEsquerda.disabled = true
+        botaoDireita.disabled = true
+        if (Object.values(respostas).includes("false")) {
             resultado_NA.style.display = 'block'
         } else {
             resultado_A.style.display = 'block'
@@ -157,5 +154,11 @@ function avancarPergunta(perguntaAtual) {
 
     console.log(Object.keys(respostas).length, perguntasT.length);
 
-    
+
 }
+
+function getOrientation() {
+    return screen.orientation.type.startsWith("portrait") ? "landscape" : "portrait";
+}
+
+exibirPergunta(0);

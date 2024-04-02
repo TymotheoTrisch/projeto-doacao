@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/verifica.css">
+    <link rel="stylesheet" href="./css/verifica-desktop.css" media="only screen and (min-width:1024px)">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Verificar Requisitos</title>
@@ -13,9 +14,9 @@
 <body>
     <header>
         <div class="header-contador">
-            <button type="button"><i class='bx bx-chevron-left' style='color:#ffffff'></i></button>
+            <button type="button" class="btn-esq"><i class='bx bx-chevron-left' style='color:#ffffff'></i></button>
             <h1></h1>
-            <button type="button"><i class='bx bx-chevron-right' style='color:#ffffff'></i></button>
+            <button type="button" class="btn-dir"><i class='bx bx-chevron-right' style='color:#ffffff'></i></button>
         </div>
     </header>
 
@@ -34,18 +35,18 @@
         <div class="resposta apto">
             <h1>Você está apto para doar sangue</h1>
             <img src="./img/apto.svg" alt="apto">
-            
-            <a href="./index.html"><button type="button" class="btn-voltar">Voltar a página inicial</button></a>
 
-            
         </div>
+        
         <div class="resposta nao-apto">
             <h1>Você não está apto para doar sangue</h1>
             <img src="./img/nao_apto.svg" alt="não apto">
-            
-            <a href="./index.html"><button type="button" class="btn-voltar">Voltar a página inicial</button></a>
+
         </div>
         
+        <div class="voltar">
+            <a href="./index.html"><button type="button" class="btn-voltar">Voltar a página inicial</button></a>
+        </div>
         <div class="btn-cancelar">
             <a href="./index.html"><button>Cancelar</button></a>
         </div>
