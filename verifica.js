@@ -86,6 +86,7 @@ const pergunta1 = document.querySelector('.titulo-pergunta h1')
 const btn_nao = document.getElementById("btn-nao")
 const btn_sim = document.getElementById('btn-sim')
 const btn_cancelar = document.querySelector('.btn-cancelar')
+const btn_voltar = document.querySelector('.voltar a')
 
 
 function exibirPergunta(indice) {
@@ -141,6 +142,7 @@ function avancarPergunta() {
         contador.innerHTML = "......"
         botaoEsquerda.disabled = true
         botaoDireita.disabled = true
+        btn_voltar.style.display = 'flex'
         if (Object.values(respostas).includes("false")) {
             resultado_NA.style.display = 'block'
         } else {
