@@ -50,6 +50,15 @@ button {
     display: flex;
     padding: 2%;
     justify-content: center;
+    cursor: pointer;
+    border: 3px solid #F25B5D;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 700;
 }
 
 /* Fim Teste */
