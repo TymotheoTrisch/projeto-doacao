@@ -56,7 +56,7 @@ header {
     border-radius: 60px 60px 0 0;
     position: relative;
     width: 100%;
-    padding: 0 6% 15%;
+    padding: 0 6% 10%;
     height: 100%;
 }
 
@@ -262,6 +262,82 @@ input[type="checkbox"]:checked~label {
 /* Fim unidade de coleta */
 
 /* Fim Main */
+
+/* Inicio Footer */
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15%;
+}
+
+footer h1, footer .social {
+    margin: 2% 0;
+}
+
+footer h1 {
+    font-size: 120%;
+    
+}
+
+span {
+    color: #F9797B;
+    
+}
+
+
+.social .linkedin, .social .github {
+    padding: 2% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+    border: solid 1px;
+}
+
+.linkedin {
+    margin-right: 15%; 
+    background-color: #157DD1;
+    
+}
+
+.github {
+    background-color: #000;
+    
+}
+
+.linkedin i, .github i {
+    font-size: 30px;
+    margin-right: 5%;
+}
+
+.linkedin i {
+    padding-bottom: 5px;
+}
+
+.linkedin, .github {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 110%;
+}
+
+
+
+/* Fim Footer */
 
 /* Classe para tirar algumas tags da tela */
 .none-mobile {
