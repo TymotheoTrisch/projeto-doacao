@@ -68,16 +68,10 @@ header {
 
 .buttons button:nth-child(1):hover  {
     translate: 0px -10px;
-    /* border: none;
-    background-color: #F25B5D;
-    color: #fff; */
 }
 
 .buttons button:nth-child(2):hover  {
     translate: 0px -10px;
-    /* border: solid 1px #F25B5D;
-    background-color: transparent;
-    color: #F25B5D; */
 }
 
 .resposta {

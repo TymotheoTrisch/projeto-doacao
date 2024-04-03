@@ -15,14 +15,12 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
     width: 100%;
 }
 
 
 /* Começo Header */
 header {
-    /* height: 80%; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -97,7 +95,6 @@ header {
 
 .teste {
     margin: 24% 0 17%;
-    /* background-color: #F9797B; */
     width: 100%;
 }
 
@@ -128,7 +125,6 @@ button {
 /* Inicio exigências */
 
 .exigencias {
-    /* background-color: #F9797B; */
     margin-bottom: 15%;
 }
 
@@ -178,7 +174,6 @@ label {
     width: 70%;
     margin-left: 3%;
     font-size: 110%;
-    /* background-color: #F25B5D; */
 }
 
 li input {
@@ -186,7 +181,6 @@ li input {
     appearance: none;
     width: 27px;
     height: 25px;
-    /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
     border: solid 2px #F25B5D;
     border-radius: 50%;
     transition: .2s ease-in-out;
@@ -209,14 +203,9 @@ input[type="checkbox"]:checked~label {
 
 /* Inicio unidade de coleta */
 
-.unidade-coleta {
-    /* background-color: aqua; */
-}
-
 .titulo-coleta h1 {
     font-size: 165%;
     margin-bottom: 6%;
-    /* margin-top: 15%; */
 }
 
 .container1 {
@@ -261,7 +250,6 @@ input[type="checkbox"]:checked~label {
 }
 
 .localizacao a i {
-    /* margin: 0 5% 0 0%; */
     font-size: 20px;
     margin-right: 2%;
 }
@@ -276,7 +264,6 @@ input[type="checkbox"]:checked~label {
 /* Fim Main */
 
 /* Classe para tirar algumas tags da tela */
-
 .none-mobile {
     display: none;
 }
