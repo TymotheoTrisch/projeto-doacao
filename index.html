@@ -13,12 +13,15 @@
 </head>
 
 <body>
+    <!-- Header, onde fica o logo no mobile, e no desktop o teste para verificação -->
     <header>
+        <!-- Logo -->
         <div class="img-header-logo">
             <img src="./img/logo.svg" alt="Logo Doe">
             <h1>Doe</h1>
         </div>
 
+        <!-- teste de verificação para desktop -->
         <section class="teste-desktop none-mobile">
             <div class="titulo-teste-desktop">
                 <h1>Faça o teste para ver se você tem os requisitos mínimos para doar:</h1>
@@ -28,7 +31,10 @@
         </section>
     </header>
 
+    <!-- Main, corpo do site -->
     <main class="container">
+    
+    <!-- Info de curiosidades -->
         <section class="info">
             <div>
                 <img src="./img/mundo.svg" alt="Localização mundo">
@@ -44,6 +50,7 @@
             </div>
         </section>
 
+        <!-- Teste de verificação no mobile -->
         <section class="teste none-desktop">
             <div class="titulo-teste">
                 <h1>Faça o teste para ver se você tem os requisitos mínimos para doar:</h1>
@@ -52,6 +59,7 @@
             <a href="./verifica.html"><button type="button" id="btn-verificar">Verificar</button></a>
         </section>
 
+        <!-- Lista de exigências para doar, nessa parte alguns vão estar com uma classe none mobile, que não aparecem no mobile, só aparecem no desktop e tablet -->
         <div class="exigencias-requisitos">
             <section class="exigencias">
                 <div class="titulo-exigencias">
@@ -97,6 +105,8 @@
 
                         <input type="checkbox" id="bebida">
                     </li>
+                    
+                    <!-- Classe none mobile -->
                     <li class="none-mobile">
                         <div class="icon">
                             <i class='bx bx-plus-medical' style='color:#03a9f4'></i>
@@ -105,6 +115,8 @@
 
                         <input type="checkbox" id="saude">
                     </li>
+                    
+                    <!-- Classe none mobile -->
                     <li class="none-mobile">
                         <div class="icon">
                             <i class='bx bx-male' style='color:#ffb300'></i>
@@ -113,6 +125,8 @@
 
                         <input type="checkbox" id="peso">
                     </li>
+                    
+                    <!-- Classe none mobile -->
                     <li class="none-mobile">
                         <div class="icon">
                             <i class='bx bx-face' style='color:#03a9f4'></i>
@@ -126,6 +140,8 @@
                 </ul>
             </section>
 
+            <!-- Requisitos para doar, só aparece no desktop e tablet -->
+            <!-- Classe none mobile -->
             <section class="requisitos none-mobile">
                 <div class="titulo-requisitos">
                     <h1>Requisitos para doar:</h1>
@@ -212,13 +228,18 @@
             </section>
         </div>
 
+
+        <!-- Lista de unidades de coleta -->
         <section class="unidade-coleta">
             <div class="titulo-coleta">
                 <h1>Unidades de coleta:</h1>
             </div>
 
             <div class="conteudo-coleta">
-                <div class="container1">
+            
+                <div class="unidade">
+                <!-- O Iframe só aparece no desktop -->
+                <!-- Classe none mobile -->
                     <div class="iframe-local none-mobile">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.4280739270916!2d-51.117711823694364!3d-29.678366414398756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951943c7e0f4af83%3A0x8a2f8a9514c734b7!2sHemovida%20Sociedade%20Simples!5e0!3m2!1spt-BR!2sbr!4v1711853464224!5m2!1spt-BR!2sbr"
@@ -227,21 +248,27 @@
                     </div>
 
                     <img class="img-local none-desktop" src="./img/hospital_Regina.png" alt="Imagem do hospital Regina">
+                    
                     <div class="info-unidade">
                         <a href="https://hospitalregina.com.br/informacoes-uteis/doacao-de-sangue" target="_blank">
                             <h1>HEMOVIDA - Hospital Regina</h1>
                         </a>
+                        
                         <a class="tell" href="tel:+555135815241">(51) 3581-5241</a>
+                        
                         <div class="localizacao">
                             <a href="https://maps.app.goo.gl/a1yuGDywTdNPbM2G7" target="_blank">
                                 <i class='bx bx-map' style='color:#2a73c4'></i>
                                 <p>Localização</p>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
 
-                <div class="container1">
+                <div class="unidade">
+                <!-- O Iframe só aparece no desktop -->
+                <!-- Classe none mobile -->
                     <div class="iframe-local none-mobile">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.411139090766!2d-51.1685738236892!3d-29.823552221069676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196f4cc3f26473%3A0xade431d7e1699a0c!2sHospital%20Get%C3%BAlio%20Vargas!5e0!3m2!1spt-BR!2sbr!4v1711853697352!5m2!1spt-BR!2sbr"
@@ -250,12 +277,14 @@
                     </div>
 
                     <img class="img-local none-desktop" src="./img/Hospital-Getulio-Vargas.png"
-                        alt="Imagem do hospital Regina">
+                        alt="Imagem do hospital Getúlio Vargas">
+                        
                     <div class="info-unidade">
                         <a href="https://www.fhgv.com.br/home/2022/06/unidade-de-coleta-de-sangue-no-getulio-vargas-completa-seis-meses-no-dia-mundial-do-doador-de-sangue/"
                             target="_blank">
                             <h1>Unidade coleta hospital Getulio Vargas</h1>
                         </a>
+                        
                         <a class="tell" href="tel:+555134518200">(51) 3451-8200</a>
                         <div class="localizacao">
                             <a href="https://maps.app.goo.gl/wtwQBxuPa2PMxmrj6" target="_blank">
@@ -263,34 +292,42 @@
                                 <p>Localização</p>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
 
-                <div class="container1">
+                <div class="unidade">
+                <!-- O Iframe só aparece no desktop -->
+                <!-- Classe none mobile -->
                     <div class="iframe-local none-mobile">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.085244308914!2d-51.18125122368068!3d-30.063090932142792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199d5556968425%3A0xe0230311ffe2d80a!2sHemocentro%20do%20Estado%20do%20Rio%20Grande%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1711853633316!5m2!1spt-BR!2sbr"
                             width="369" height="145" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <img class="img-local none-desktop" src="./img/Hemocentro-poa.jpg" alt="Imagem do hospital Regina">
+                    <img class="img-local none-desktop" src="./img/Hemocentro-poa.jpg" alt="Imagem do hemocentro em Porto Alegre">
+                    
                     <div class="info-unidade">
                         <a href="https://www.rs.gov.br/carta-de-servicos/servicos?servico=601" target="_blank">
                             <h1>HEMOCENTRO - Porto Alegre</h1>
                         </a>
+                        
                         <a class="tell" href="tel:+555133366755">(51) 3336-6755</a>
+                        
                         <div class="localizacao">
                             <a href="https://maps.app.goo.gl/vEKDJDPEG3E4Sqey7" target="_blank">
                                 <i class='bx bx-map' style='color:#2a73c4'></i>
                                 <p>Localização</p>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer, onde fica os créditos de desenvolvimento -->
     <footer>
         <h1>Develop by <span>Tymotheo Trisch</span></h1>
         <div class="social">

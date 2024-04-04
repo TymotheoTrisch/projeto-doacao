@@ -1,5 +1,6 @@
 var respostas = {};
 
+// Array de perguntas, onde contem, o id, a pergunta, os valores dos botões sim e não, e a resposta se caso for não apto
 const perguntasT = [
     {
         id: 1,
@@ -87,6 +88,7 @@ const perguntasT = [
     }
 ]
 
+
 const pergunta = document.querySelector('.pergunta');
 var indicePerguntaAtual = 0;
 const contador = document.querySelector('.header-contador h1');
@@ -101,9 +103,8 @@ const btn_voltar = document.querySelector('.voltar a')
 
 const req_NA = document.querySelector('.req-nao-cumpridos')
 
-
+// Exibir pergunta no display
 function exibirPergunta(indice) {
-
 
     pergunta1.innerHTML = perguntasT[indice].pergunta
     btn_nao.value = perguntasT[indice].btn_nao
@@ -114,7 +115,7 @@ function exibirPergunta(indice) {
     indicePerguntaAtual = indice;
 }
 
-
+// Código para voltar e avançar a pergunta, no contador
 var botaoEsquerda = document.querySelector('.header-contador .btn-esq');
 var botaoDireita = document.querySelector('.header-contador .btn-dir');
 
@@ -131,54 +132,66 @@ botaoDireita.addEventListener('click', function () {
     }
 });
 
+// Código para captar a resposta do usuário
 var botoesResposta = document.querySelectorAll('.buttons button');
 
 botoesResposta.forEach(function (botao) {
     botao.addEventListener('click', function () {
 
+        // Pega o id da pergunta
         var pergunta = perguntasT[indicePerguntaAtual].id;
+        // Pega o valor do botão, (true, false)
         var resposta = botao.value;
-        console.log(resposta, pergunta);
+        
+        // Armazena a resposta em um array
         respostas[pergunta] = resposta;
+        
+        // Chama a função para avançar a pergunta
         avancarPergunta();
     });
 });
 
+// Função para avançar de pergunta
 function avancarPergunta() {
 
     var indiceProximaPergunta = indicePerguntaAtual + 1;
     console.log(respostas);
 
+    // Verifica se o usuário respondeu todas as perguntas
     if (Object.keys(respostas).length === perguntasT.length) {
         pergunta.style.display = 'none'
         btn_cancelar.style.display = 'none'
-        // btn_cancelar.style.
+        
+        // Muda o contador
         contador.innerHTML = "......"
+        
+        // Desabilita os botões do contador
         botaoEsquerda.disabled = true
         botaoDireita.disabled = true
+        
+        // Mostra o botão voltar
         btn_voltar.style.display = 'flex'
+        
+        // Verifica se o usuário está apto ou não
         if (Object.values(respostas).includes("false")) {
             resultado_NA.style.display = 'flex'
             Object.keys(respostas).forEach((id) => {
                 if (respostas[id] === 'false') {
-                    req_NA.appendChild(li(id - 1)); // Subtrai 1 do perguntaId para corresponder ao índice da pergunta
+                    req_NA.appendChild(li(id - 1));
                 }
             });
             document.querySelector('.obs').style.display = 'flex'
         } else {
             resultado_A.style.display = 'flex'
         }
-    }
-
-    if (indiceProximaPergunta < perguntasT.length) {
+    } else {
+        // Chama a função para exibir a próxima pergunta
         exibirPergunta(indiceProximaPergunta)
     }
 
-    console.log(Object.keys(respostas).length, perguntasT.length);
-
-
 }
 
+// Função que incorpora o 'li' no html para mostrar os requisitos não cumpridos
 function li(index) {
     const li = document.createElement('li')
     li.innerHTML = `${perguntasT[index].resposta}`
@@ -186,4 +199,5 @@ function li(index) {
     return li
 }
 
+// Chama a primeira função para mostrar a primeira pergunta
 exibirPergunta(0);

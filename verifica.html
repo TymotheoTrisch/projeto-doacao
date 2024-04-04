@@ -12,7 +12,9 @@
 </head>
 
 <body>
+    <!-- Header, onde fica o contador de perguntas -->
     <header>
+        <!-- Contador de perguntas -->
         <div class="header-contador">
             <button type="button" class="btn-esq"><i class='bx bx-chevron-left' style='color:#ffffff'></i></button>
             <h1></h1>
@@ -20,24 +22,31 @@
         </div>
     </header>
 
+    <!-- Corpo do site -->
     <main class="container">
+        <!-- Sessão de perguntas -->
         <section class="pergunta">
+            <!-- Titulo pergunta -->
             <div class="titulo-pergunta">
+                <!-- Incorporação da pergunta pelo JS -->
                 <h1></h1>
             </div>
 
+            <!-- Botões de sim ou não -->
             <div class="buttons">
                 <button id="btn-nao" type="button" class="btn-nao">Não</button>
                 <button id="btn-sim" type="button" class="btn-sim">Sim</button>
             </div>
         </section>
 
+        <!-- Resposta apto -->
         <div class="resposta apto">
             <h1>Você está apto para doar sangue</h1>
             <img src="./img/apto.svg" alt="apto">
 
         </div>
 
+        <!-- Resposta não apto -->
         <div class="resposta nao-apto">
             <div class="titulo-n-a">
                 <h1>Você não está apto para doar sangue</h1>
@@ -52,10 +61,13 @@
         <p class="obs">*: Isso pode ser avaliado na entrevista, então é aconselhado ir a uma unidade de coleta para
             verificar</p>
 
-
+        
+        <!-- Botão vontar -->
         <div class="voltar">
             <a href="./index.html"><button type="button" class="btn-voltar">Voltar a página inicial</button></a>
         </div>
+        
+        <!-- Botão cancelar teste -->
         <div class="btn-cancelar">
             <a href="./index.html"><button>Cancelar</button></a>
         </div>
