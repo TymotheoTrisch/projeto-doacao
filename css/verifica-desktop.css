@@ -132,6 +132,10 @@ ul li {
     
 }
 
+.btn-cancelar {
+    height: 55%;
+}
+
 @media (min-width: 950px) {
     
     .nao-apto {
@@ -167,11 +171,7 @@ ul li {
     }
     
     ul {
-        margin: 0 5%
-        
-        
-        
-        ;
+        margin: 0 5%;
     }
     
     ul li {
@@ -193,6 +193,6 @@ ul li {
     }
     
     .btn-cancelar  {
-        height: 30%;
+        height: 50%;
     }
 }
