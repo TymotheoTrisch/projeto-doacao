@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/verifica.css">
-    <link rel="stylesheet" href="./css/verifica-desktop.css" media="only screen and (min-width:1024px)">
+    <link rel="stylesheet" href="./css/verifica-desktop.css" media="only screen and (min-width:750px)">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Verificar Requisitos</title>
@@ -37,24 +37,29 @@
             <img src="./img/apto.svg" alt="apto">
 
         </div>
-        
+
         <div class="resposta nao-apto">
-            <h1>Você não está apto para doar sangue</h1>
-            <img src="./img/nao_apto.svg" alt="não apto">
-            <h1 class="resposta-requisitos">Requsitos não cumpridos: </h1>
-            <ul class="req-nao-cumpridos"></ul>
+            <div class="titulo-n-a">
+                <h1>Você não está apto para doar sangue</h1>
+                <img src="./img/nao_apto.svg" alt="não apto">
+            </div>
+            <div class="requisitos-n-a">
+                <h1 class="resposta-requisitos">Requsitos não cumpridos: </h1>
+                <ul class="req-nao-cumpridos"></ul>
+            </div>
         </div>
-        
-        <p class="obs">*: Isso pode ser avaliado na entrevista, então é aconselhado ir a uma unidade de coleta para verificar</p>
-        
-                
+
+        <p class="obs">*: Isso pode ser avaliado na entrevista, então é aconselhado ir a uma unidade de coleta para
+            verificar</p>
+
+
         <div class="voltar">
             <a href="./index.html"><button type="button" class="btn-voltar">Voltar a página inicial</button></a>
         </div>
         <div class="btn-cancelar">
             <a href="./index.html"><button>Cancelar</button></a>
         </div>
-        
+
     </main>
 
     <script src="./verifica.js"></script>

@@ -26,6 +26,13 @@ button {
     padding: 20%;
 }
 
+button:hover {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 700;
+}   
+
 /* Fim Teste */
 
 /* Fim Header */
@@ -41,6 +48,9 @@ button {
     flex-direction: row;
 }
 
+label, li input {
+    cursor: pointer;
+}
 /* Inicio exigências */
 
 .requisitos, .exigencias {

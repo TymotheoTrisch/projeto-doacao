@@ -30,7 +30,7 @@ header {
 .container {
     text-align: center;
     border-radius: 0;
-    height: 86%;
+    height: 500%;
 }
 
 .titulo-pergunta {
@@ -47,7 +47,7 @@ header {
 
 .buttons button {
     height: 38%;
-    width: 10%;
+    width: 20%;
     border-radius: 7px;
     font-size: 130%;
 }
@@ -79,8 +79,9 @@ header {
 }
 
 .resposta img {
-    margin-top: 3%;
-    width: 16%;
+    /* margin-top: 3%; */
+    margin: 4% 35%;
+    /* width: 16%; */
 }
 
 .resposta .resposta-requisitos {
@@ -99,14 +100,15 @@ header {
 ul {
     margin: auto;
     width: 100%;
-    padding-left: 10%;
+    /* padding-left: 10%; */
 }
 
 ul li {
-    margin: .5% 0;
+    /* margin: .5% 0; */
     display: flex;
+    padding: 3%;
     width: 100%;
-    align-items: start;
+    align-items: center;
 }
 
 .voltar {
@@ -130,8 +132,63 @@ ul li {
     
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 950px) {
+    
+    .nao-apto {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nao-apto img {
+        width: 55%;
+        margin: 10%;
+        padding: auto;
+    }
+    
+    .resposta .resposta-requisitos {
+        margin-top: 0;
+    }
+    
+    .obs {
+        margin-top: 3%;
+        width: calc(100% - 50%);
+        margin-left: 50%;
+        justify-content: end;
+        text-align: start;
+    }
+    
+    .buttons button {
+        width: 15%;
+    }
+    
+    .req-nao-cumpridos {
+        margin-top: 5%;
+    }
+    
+    ul {
+        margin: 0 5%;
+    }
+    
+    ul li {
+        padding: 2%;
+    }
+    
+    .voltar {
+        margin-top: 5%;
+    }
+    
+    .voltar a {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1669px) {
     .voltar a {
         margin-top: 10%;
+    }
+    
+    .btn-cancelar  {
+        height: 30%;
     }
 }

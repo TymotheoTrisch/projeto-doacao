@@ -6,84 +6,84 @@ const perguntasT = [
         pergunta: 'Você está em boas condições de saúde?',
         btn_nao: 'false',
         btn_sim: 'true',
-        resposta: 'Você não esta em boas condições de saúde;'
+        resposta: ' <i class="bx bx-plus-medical" style="color:#03a9f4"></i> <p>Você não esta em boas condições de saúde;</p>'
     },
     {
         id: 2,
         pergunta: 'Você pesa mais que 50 quilos?',
         btn_nao: 'false',
         btn_sim: 'true',
-        resposta: 'Você pesa menos que 50 quilos;'
+        resposta: '<i class="bx bx-male" style="color:#ffb300"></i><p>Você pesa menos que 50 quilos;</p>'
     },
     {
         id: 3,
         pergunta: 'Você tem entre 16 e 69 anos de idade? (Permitida doação a partir de 16 anos se acompanhado de responsável legal à cada doação)',
         btn_nao: 'false',
         btn_sim: 'true',
-        resposta: 'Você não cumpre os requisitos de idade;'
+        resposta: '<i class="bx bx-face" style="color:#03a9f4"></i><p>Você não cumpre os requisitos de idade;</p>'
     },
     {
         id: 4,
         pergunta: 'Você teve alguma vacinação recente?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você teve alguma vacinação recente;'
+        resposta: '<i class="bx bx-injection" style="color:#03a9f4"></i><p>Você teve alguma vacinação recente;</p>'
     },
     {
         id: 5,
         pergunta: 'Você tem algum piercing na língua ou genital?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você tem algum piercing na língua ou genital;'
+        resposta: '<i class="bx bxs-hotel" style="color:#FFB300"></i><p>Você tem algum piercing na língua ou genital;</p>'
     },
     {
         id: 6,
         pergunta: 'Você tem alguma tatuagem, maquiagem definitiva feita nos ultimos 12 meses?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você tem alguma tatuagem ou maquiagem definitiva;'
+        resposta: '<i class="bx bx-sticker" style="color:#03a9f4"></i><p>Você tem alguma tatuagem ou maquiagem definitiva;</p>'
     },
     {
         id: 7,
         pergunta: 'Você teve algum sintoma de gripe nos últimos 15 dias?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você teve algum sintoma de gripe nos ultimos 15 dias;'
+        resposta: '<i class="bx bxs-virus" style="color:#ffb300"></i><p>Você teve algum sintoma de gripe nos ultimos 15 dias;</p>'
     },
     {
         id: 8,
         pergunta: 'Você está grávida ou amamentanto?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você está grávida ou amamentando;'
+        resposta: '<i class="bx bx-plus-medical" style="color:#03a9f4"></i><p>Você está grávida ou amamentando;</p>'
     },
     {
         id: 9,
         pergunta: 'Você fez alguma cirurgia específica? (isso será avaliado na entrevista)',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você fez alguma cirurgia específica <strong>(Isso será avaliado na entrevista)*</strong>;'
+        resposta: '<i class="bx bx-clinic" style="color:#ffb300"></i><p>Você fez alguma cirurgia específica <strong>(Isso será avaliado na entrevista)*</strong>;</p>'
     },
     {
         id: 10,
         pergunta: 'Você tem DST ou situações nas quais há maior risco de adquirir DST? (aguardar 12 meses)',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você tem DST ou risco de ter (aguardar 12 meses);'
+        resposta: '<i class="bx bxs-virus" style="color:#03a9f4"></i><p>Você tem DST ou risco de ter (aguardar 12 meses);</p>'
     },
     {
         id: 11,
-        pergunta: 'Você faz uso de algum medicamento? (Isso será avaliado na entrevista)',
+        pergunta: 'az uso de algum medicamento? (Isso será avaliado na entrevista)',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você faz uso de algum medicamento <strong>(Isso será avaliado na entrevista)*</strong>;'
+        resposta: '<i class="bx bxs-capsule" style="color:#ffb300"></i><p>Você faz uso de algum medicamento <strong>(Isso será avaliado na entrevista)*</strong>;</p>'
     },
     {
         id: 12,
         pergunta: 'Você teve hepatite após os 11 anos de idade?',
         btn_nao: 'true',
         btn_sim: 'false',
-        resposta: 'Você teve hepatite após 11 anos de idade;'
+        resposta: '<i class="bx bxs-virus" style="color:#03a9f4"></i><p>Você teve hepatite após 11 anos de idade;</p>'
     }
 ]
 
@@ -152,6 +152,7 @@ function avancarPergunta() {
     if (Object.keys(respostas).length === perguntasT.length) {
         pergunta.style.display = 'none'
         btn_cancelar.style.display = 'none'
+        // btn_cancelar.style.
         contador.innerHTML = "......"
         botaoEsquerda.disabled = true
         botaoDireita.disabled = true

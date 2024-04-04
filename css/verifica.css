@@ -9,12 +9,16 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #F9797B;
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100%; */
     width: 100%;
 }
 
@@ -22,7 +26,7 @@ body {
 /* Começo Header */
 header {
     width: 100%;
-    height: 120px;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -58,7 +62,7 @@ header {
     position: relative;
     width: 100%;
     padding: 0 6% 5%;
-    height: 100%;
+    height: 500%;
 }
 
 .pergunta {
@@ -115,25 +119,39 @@ header {
 .resposta img {
     margin-top: 1%;
     width: auto;
-    margin: 20px 50px;
+    margin: 10% 15%;
 }
 
 ul {
     margin-top: 3%;
+    background-color: #fbfbfb;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px; 
+    border-collapse: collapse;
 }
 
 ul li {
     color: #000;
     font-weight: 500;
     text-align: start;
-    margin-top: 5% ;
-    padding: 2% 5%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 4% 4%;
     list-style: none;
-    font-size: 16px;
-    background-color: #FBFBFB;
+    font-size: 16px; 
+    display: flex;
+    align-items: center; 
+}
+
+ul li:last-child {
+    border: none;
+}
+
+li i {
+    font-size: 200%;
+    padding: 1%;
+    border: solid 1px;
     border-radius: 7px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    
+    margin-right: 4%;
 }
 
 .obs {
@@ -143,31 +161,9 @@ ul li {
     /* margin-bottom: 5%; */
 }
 
-/* .resposta .resposta-requisitos {
-    margin-top: 2%;
-}
-
-.req-nao-cumpridos {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1%;
-}
-
-ul {
-    width: 100%;
-}
-
-ul li {
-    margin: .5% 0;
-    display: flex;
-    width: 100%;
-    text-align: start;
-    font-size: 16px;
-} */
-
 .voltar {
     width: 100%;
-    height: 7%;
+    /* height: 1%; */
     margin-bottom: 5%;
     margin-top: 15%;
 }
