@@ -34,19 +34,19 @@ header {
 }
 
 .titulo-pergunta {
-    margin: 5% 15%;
+    margin: 5% 15% 0;
 }
 
 .buttons {
     width: 100%;
-    height: 60%;
+    height: 40%;
     display: flex;
     align-items: end;
     justify-content: center;
 }
 
 .buttons button {
-    height: 38%;
+    height: 58%;
     width: 20%;
     border-radius: 7px;
     font-size: 130%;
@@ -162,6 +162,10 @@ ul li {
         text-align: start;
     }
     
+    .buttons {
+        /* height: auto; */
+    }
+    
     .buttons button {
         width: 15%;
     }
@@ -194,5 +198,9 @@ ul li {
     
     .btn-cancelar  {
         height: 50%;
+    }
+    
+    .buttons button {
+        width: 10%;
     }
 }

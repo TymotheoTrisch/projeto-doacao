@@ -26,7 +26,7 @@ body {
 /* Começo Header */
 header {
     width: 100%;
-    height: 20%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,11 +66,11 @@ header {
 }
 
 .pergunta {
-    height: 30%;
+    height: 200px;
 }
 
 .titulo-pergunta {
-    height: 100%;
+    height: 280px;
     margin: 15% 0 0;
 }
 
@@ -82,14 +82,14 @@ header {
 
 .buttons {
     width: 100%;
-    height: 80%;
+    height: 20%;
     display: flex;
     align-items: end;
     justify-content: center;
 }
 
 .buttons button {
-    height: 30%;
+    height: 100%;
     width: 33%;
     border-radius: 7px;
     font-size: 130%;
@@ -207,4 +207,20 @@ li i {
 
 .none-mobile {
     display: none;
+}
+
+@media (max-width: 316px) {
+
+    
+    .titulo-pergunta {
+        height: auto;
+    }
+    
+    .buttons {
+        margin-top: 15%;
+    }
+    
+    .btn-cancelar {
+        height: 50%;
+    }
 }
