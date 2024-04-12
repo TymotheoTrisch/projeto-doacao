@@ -74,7 +74,7 @@ const perguntasT = [
     },
     {
         id: 11,
-        pergunta: 'az uso de algum medicamento? (Isso será avaliado na entrevista)',
+        pergunta: 'Faz uso de algum medicamento? (Isso será avaliado na entrevista)',
         btn_nao: 'true',
         btn_sim: 'false',
         resposta: '<i class="bx bxs-capsule" style="color:#ffb300"></i><p>Você faz uso de algum medicamento <strong>(Isso será avaliado na entrevista)*</strong>;</p>'
